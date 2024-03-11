@@ -1,4 +1,5 @@
 import 'package:demo_app/ui/widgets/custom_button.dart';
+import 'package:demo_app/ui/widgets/custom_tac_button.dart';
 import 'package:demo_app/ui/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
@@ -69,16 +70,8 @@ class SignUpPage extends StatelessWidget {
     Widget tacButton(){
       return Container(
         margin: EdgeInsets.only(top: 50, bottom: 73,),
-        child: Center(
-          child: Text(
-            'Term and Conditions',
-            style: greyTextStyle.copyWith(
-              fontSize: 16,
-              fontWeight: light,
-            ),
-          ),
-        )
-      );
+        child: CustomTacButton(),
+      ) ;
     }
 
     return Scaffold(

@@ -29,8 +29,6 @@ class NewDestinationCard extends StatelessWidget {
         height: 90,
         padding: EdgeInsets.all(10),
         margin: EdgeInsets.only(
-          left: defaultMargin,
-          right: defaultMargin,
           bottom: 16,
         ),
         decoration: BoxDecoration(
@@ -50,6 +48,7 @@ class NewDestinationCard extends StatelessWidget {
                   image: AssetImage(
                     imageUrl,
                   ),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
